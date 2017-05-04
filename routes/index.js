@@ -1,6 +1,9 @@
 module.exports = function (app) {
-    app.get('/', function (req, res) {
+    app.get('/', function(req, res) {
         res.redirect('/posts');
+    });
+    app.get('/favicon.ico', function(req, res) {
+        res.end("");
     });
     app.use('/signup', require('./signup'));
     app.use('/signin', require('./signin'));

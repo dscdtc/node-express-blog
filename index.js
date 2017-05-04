@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
-var winston = require('winston');
-var expresswinston = require('express-winston');
+//var winston = require('winston');
+//var expresswinston = require('express-winston');
 var flash = require('connect-flash')();
 var session = require('express-session');
 var formidable = require('express-formidable');
@@ -58,32 +58,32 @@ app.use(function(req, res, next) {
     next();
 });
 
-// 正常请求日志
-app.use(expresswinston.logger({
-    transports: [
-        // new winston.transports.Console ({
-        //     json: true,
-        //     colorize: true
-        // }),
-        new winston.transports.File ({
-            filename: 'logs/success.log'
-        })
-    ]
-}));
+// // 正常请求日志
+// app.use(expresswinston.logger({
+//     transports: [
+//         // new winston.transports.Console ({
+//         //     json: true,
+//         //     colorize: true
+//         // }),
+//         new winston.transports.File ({
+//             filename: 'logs/success.log'
+//         })
+//     ]
+// }));
 // 路由
 routes(app);
-// 错误请求日志
-app.use(expresswinston.errorLogger({
-    transports: [
-        new winston.transports.Console ({
-            json: true,
-            colorize: true
-        }),
-        new winston.transports.File ({
-            filename: 'logs/error.log'
-        })
-    ]
-}))
+// // 错误请求日志
+// app.use(expresswinston.errorLogger({
+//     transports: [
+//         new winston.transports.Console ({
+//             json: true,
+//             colorize: true
+//         }),
+//         new winston.transports.File ({
+//             filename: 'logs/error.log'
+//         })
+//     ]
+// }))
 
 // 自定义错误提示页面
 app.use(function(err, req, res, next) {
