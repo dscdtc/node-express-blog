@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscdtc/node-blog.git"
+    "url": "git+https://github.com/dscdtc/node-express-blog.git"
   },
   "keywords": [
     "node",
@@ -21,9 +21,9 @@
   "author": "dscdtc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dscdtc/node-blog/issues"
+    "url": "https://github.com/dscdtc/node-express-blog/issues"
   },
-  "homepage": "https://github.com/dscdtc/node-blog#readme",
+  "homepage": "https://github.com/dscdtc/node-express-blog#readme",
   "dependencies": {
     "config-lite": "^2.0.0",
     "connect-flash": "^0.1.1",
