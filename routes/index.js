@@ -2,9 +2,9 @@ module.exports = function (app) {
     app.get('/', function(req, res) {
         res.redirect('/posts');
     });
-    app.get('/favicon.ico', function(req, res) {
-        res.end("");
-    });
+    // app.get('/favicon.ico', function(req, res) {
+    //     res.end('../favicon.ico');
+    // });
     app.use('/signup', require('./signup'));
     app.use('/signin', require('./signin'));
     app.use('/signout', require('./signout'));

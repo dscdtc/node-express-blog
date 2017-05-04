@@ -1,12 +1,12 @@
 {
-  "name": "myblog",
+  "name": "PrivateBlog",
   "version": "0.0.1",
-  "description": "my first blog",
+  "description": "欢迎来到私人博客 您可以发布任何内容 不必遵守当地法律限制",
   "main": "index.js",
   "scripts": {
     "heroku": "NODE_ENV=production node --harmony index",
     "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'",
-    "local": "node --harmony index",
+    "local": "supervisor --harmony index",
     "test": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "repository": {
