@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+      body {padding:50px; font:14px "Lucida Grande"; Helvetica, Arial, sans-serif;}
+    </style>
+    <title><%= name %></title>
+  </head>
+  <body>
+    <%- include('header') %>
+        <h1><%= name.toUpperCase() %></h1>
+        <p>hello, <%= name %></p>
+    <%- include('footer') %>
+
+    <!--
+    <% code %>：运行 JavaScript 代码，不输出
+    <%= code %>：显示转义后的 HTML内容
+    <%- code %>：显示原始 HTML 内容
+    -->
+  </body>
+  </html>
