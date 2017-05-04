@@ -1,8 +1,8 @@
 #Node.ignore from git@github.com:github/gitignore.git
 
 # Custom
-#config/*
-#!config/default.*
+config/*
+!config/default.*
 npm-debug/log
 logs/*
 
