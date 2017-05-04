@@ -1,7 +1,7 @@
 {
   "name": "PrivateBlog",
   "version": "0.0.1",
-  "description": "欢迎来到私人博客 您可以发布任何内容 不必遵守当地法律限制",
+  "description": "欢迎来到私人博客 您可以发布任何内容 不必遵守当地法律",
   "main": "index.js",
   "scripts": {
     "heroku": "NODE_ENV=production node --harmony index",
