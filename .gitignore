@@ -1,6 +1,7 @@
 #Node.ignore from git@github.com:github/gitignore.git
 
 # Custom
+public/img/*
 config/*
 !config/default.*
 npm-debug/log

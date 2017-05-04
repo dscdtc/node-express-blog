@@ -4,7 +4,7 @@
     <div class="four wide column">
       <a class="avatar"
         href="/posts?author=<%= post.author._id %>"
-        data-title="<%= post.author.name %> | <%= ({m: '♂', f: '♀', x: '保密'})[post.author.gender] %>"
+        data-title="<%= post.author.name %> | <%= ({m: '♂', f: '♀', x: '*'})[post.author.gender] %>"
         data-content="<%= post.author.bio %>">
         <img class="avatar" src="/img/<%= post.author.avatar %>" alt="<%= post.author.name %>头像">
       </a>
